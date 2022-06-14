@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family="roboto":wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    background-color:;
+    display: flex;
+    margin:0;
+    align-items: center;
+ /*   flex-direction: column;*/
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container {
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress {
+    background-color: blue;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    height:4px;
+    width:50%;
+    z-index: -1;
+}
