@@ -15,7 +15,7 @@ body{
 .container {
     background-color: #fafafa;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     transform-origin: top left;
     transition: transform 0.5s linear;
     padding: 50px;
@@ -68,22 +68,29 @@ body{
     align-items: center;
     justify-content: center
  }
+
 /* this section makes the content stay in the middles no matter what size the screen is*/
 .content{
     max-width: 1000px;
     margin: 50px auto;
 }
 
-.content h1{
+.content h1 small {
     margin: 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.content small{
+small{
     color: gray;
     font-style: italic;
+    align-items: end;
 }
 
 img{
     width: 150px;
     height: 200px;
+}
+#anime {
+    position: space-between;
 }
