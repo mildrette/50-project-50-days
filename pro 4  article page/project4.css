@@ -62,11 +62,12 @@ body{
     transform: rotate(90deg);
     transform-origin: top left;
 }
-
-.content img{
-    max-width: 100%;
-}
-
+ .anime img{
+    border-radius: 20%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center
+ }
 /* this section makes the content stay in the middles no matter what size the screen is*/
 .content{
     max-width: 1000px;
@@ -80,4 +81,9 @@ body{
 .content small{
     color: gray;
     font-style: italic;
+}
+
+img{
+    width: 150px;
+    height: 200px;
 }
