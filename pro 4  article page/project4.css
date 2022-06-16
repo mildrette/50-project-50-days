@@ -21,15 +21,48 @@ body{
     padding: 50px;
 }
 
+/* this controls the page slide flex*/
 .container.show-nav {
     transform: rotate(-20deg);
 }
+
+/* controls he position of the nav*/
+nav{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+/*romoves the bullets on the nav items*/
+ nav li{
+    list-style-type: none;
+    padding-left: 30px;
+ }
+
+ /* controls the fonts in the nav */
+ nav ul li {
+    text-transform: uppercase;
+    color: white;
+    margin: 40px 0;
+   /* transform: translateX( -100%);*/
+    transition: transform 0.5s ease-in;
+ }
+
+ /*controls the icon in the nav*/
+ nav ul li i{
+    font-size: 20px;
+    margin-right: 10px;
+ }
+
+/*the position of the circle on top of he page is controled by this code here*/
 .circle-container {
     position: fixed;
     top: -100px;
     left: -100px;
 }
 
+/* the circle itself is controlled by this code here the color and shape*/
 .circle{
     background-color: #09a143;
     height:200px;
@@ -39,6 +72,7 @@ body{
     transition: transform 0.5s linear;
 }
 
+/* the icons in the circle up the page is controlled by this code */
 .circle button{
     position: absolute;
     top: 50%;
@@ -50,6 +84,8 @@ body{
     font-size: 26px;
     color: white;
 }
+
+
 .circle button:focus{
     outline: none;
 }
@@ -75,17 +111,23 @@ body{
     margin: 50px auto;
 }
 
-.content h1 small {
+.content h1 {
     margin: 0;
     text-align: center;
     text-transform: uppercase;
 }
 
-small{
+.content small{
     color: gray;
     font-style: italic;
-    align-items: end;
+    align-items: center;
 }
+
+.content p{
+    color: #333;
+    line-height: 1-5;
+}
+
 
 img{
     width: 150px;
