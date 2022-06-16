@@ -26,6 +26,11 @@ body{
     transform: rotate(-20deg);
 }
 
+/* this section controls he way the navbar appears after the click.*/
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
 /* controls he position of the nav*/
 nav{
     position: fixed;
@@ -38,6 +43,7 @@ nav{
  nav li{
     list-style-type: none;
     padding-left: 30px;
+    font-size: 15px;
  }
 
  /* controls the fonts in the nav */
@@ -45,7 +51,7 @@ nav{
     text-transform: uppercase;
     color: white;
     margin: 40px 0;
-   /* transform: translateX( -100%);*/
+   transform: translateX( -100%);
     transition: transform 0.5s ease-in;
  }
 
@@ -54,7 +60,16 @@ nav{
     font-size: 20px;
     margin-right: 10px;
  }
+/* this controls the slide nature of he icon on he navbar at the bottom*/
+ nav ul li + li{
+    margin-left: 15px;
+    transform: translateX( -150%);
+ }
 
+ nav ul li + li + li{
+    margin-left: 30px;
+    transform: translateX( -200%);
+ }
 /*the position of the circle on top of he page is controled by this code here*/
 .circle-container {
     position: fixed;
@@ -72,6 +87,11 @@ nav{
     transition: transform 0.5s linear;
 }
 
+/* the controls he close button in th circle above the page*/
+
+.container.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
 /* the icons in the circle up the page is controlled by this code */
 .circle button{
     position: absolute;
